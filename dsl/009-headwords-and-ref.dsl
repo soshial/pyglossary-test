@@ -15,12 +15,12 @@ test ref target
     [m1]\[ref target="headword with"\]headword with (brackets)\[/ref\]: [ref target="headword with"]headword with (brackets)[/ref][/m]
     [m1]\[ref target="headword with brackets"\]headword with (brackets)\[/ref\]: [ref target="headword with brackets"]headword with (brackets)[/ref][/m]
     [m1]\[ref target="headword with brackets"\]any text\[/ref\]: [ref target="headword with brackets"]any text[/ref][/m]
-    [m1]\[ref target="заголовок в кавычках"\]{«}заголовок в кавычках{»}\[/ref\]: [ref target="заголовок в кавычках"]{«}заголовок в кавычках{»}[/ref][/m]
-    [m1]\[ref target="заголовок в кавычках"\]any text\[/ref\]: [ref target="заголовок в кавычках"]any text[/ref][/m]
+    [m1]\[ref target="headword with optional parts"\]headword with {[b]}optional parts{[/b]}\[/ref\]: [ref target="headword with optional parts"]headword with {[b]}optional parts{[/b]}[/ref][/m]
+    [m1]\[ref target="headword with optional parts"\]any text\[/ref\]: [ref target="headword with optional parts"]any text[/ref][/m]
 test url target
-    [m1][i]url обыкновенный:[/i] [url]www.yandex.ru[/url][/m]
-    [m1][i]url target="www.yandex.ru":[/i] [url target="www.yandex.ru"]yaru[/url][/m]
-    [m1][i]url target="https://forum.ru-board.com/topic.cgi?forum=93&topic=3981&start=4920\#21":[/i] [url target="https://forum.ru-board.com/topic.cgi?forum=93&topic=3981&start=4920\#21"]обсуждение url target[/url][/m]
+    [m1]\[url\]www.yandex.ru\[url\]: [url]www.yandex.ru[/url][/m]
+    [m1]\[url target="www.yandex.ru"\]yaru\[url\]: [url target="www.yandex.ru"]yaru[/url][/m]
+    [m1]\[url target="https://forum.ru-board.com/topic.cgi?forum=93&topic=3981&start=4920\#21"\]discussion of url target\[url\]: [url target="https://forum.ru-board.com/topic.cgi?forum=93&topic=3981&start=4920\#21"]discussion of url target[/url][/m]
 headword
     [m1]test gloss "headword"[/m]
 HEADWORD
@@ -33,5 +33,5 @@ headword with (brackets)
     [m1]test gloss "headword with (brackets)"[/m]
 any text
     [m1]test gloss "any text"[/m]
-{«}заголовок в кавычках{»}
-    [m1]test gloss "«заголовок в кавычках»"[/m]
+headword with {[b]}optional parts{[/b]}
+    [m1]test gloss "headword with optional parts"[/m]
