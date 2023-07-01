@@ -3,15 +3,18 @@
 #CONTENTS_LANGUAGE    "English"
 
 test ref target
-    [m1]\[ref\]headword\[/ref\]:			[ref]headword[/ref][/m]
-    [m1]\[ref target="headword"\]headword\[/ref\]:	[ref target="headword"]headword[/ref][/m]
-    [m1]\[ref target="headword"\]any text\[/ref\]:	[ref target="headword"]any text[/ref][/m]
-    [m1]\[ref target="HEADWORD"\]HEADWORD\[/ref\]:	[ref target="HEADWORD"]HEADWORD[/ref][/m]
-    [m1]\[ref target="HEADWORD"\]headword\[/ref\]:	[ref target="HEADWORD"]headword[/ref][/m]
+    [m1]\[ref\]headword\[/ref\]: [ref]headword[/ref][/m]
+    [m1][ref]tell smb how to do smth[/ref][/m]
+    [m1]\[ref target="headword"\]headword\[/ref\]: [ref target="headword"]headword[/ref][/m]
+    [m1]\[ref target="headword"\]any text\[/ref\]: [ref target="headword"]any text[/ref][/m]
+    [m1]\[ref target="HEADWORD"\]HEADWORD\[/ref\]: [ref target="HEADWORD"]HEADWORD[/ref][/m]
+    [m1]\[ref target="HEADWORD"\]headword\[/ref\]: [ref target="HEADWORD"]headword[/ref][/m]
     [m1]\[ref target="headword with spaces"\]headword with spaces\[/ref\]: [ref target="headword with spaces"]headword with spaces[/ref][/m]
     [m1]\[ref target="headword with spaces"\]any text\[/ref\]: [ref target="headword with spaces"]any text[/ref][/m]
-    [m1]\[ref target="headword (with escaped brackets)"\]headword (with escaped brackets)\[/ref\]: [ref target="headword (with escaped brackets)"]headword (with escaped brackets)[/ref][/m]
-    [m1]\[ref target="headword (with escaped brackets)"\]any text\[/ref\]: [ref target="headword (with escaped brackets)"]any text[/ref][/m]
+    [m1]\[ref\]headword (with escaped brackets)\[/ref\]: [ref]headword (with escaped brackets)[/ref][/m]
+    [m1]\[ref\]headword \\(with escaped brackets\\)\[/ref\]: [ref]headword \(with escaped brackets\)[/ref][/m]
+    [m1]\[ref target="headword (with escaped brackets)"\]headword (with escaped brackets)\[/ref\]: [ref target="headword (with escaped brackets)"]any text for headword (with escaped brackets)[/ref][/m]
+    [m1]\[ref target="headword \\(with escaped brackets\\)"\]headword (with escaped brackets)\[/ref\]: [ref target="headword \(with escaped brackets\)"]any text for headword (with escaped brackets)[/ref][/m]
     [m1]\[ref target="headword with"\]headword with (brackets)\[/ref\]: [ref target="headword with"]headword with (brackets)[/ref][/m]
     [m1]\[ref target="headword with brackets"\]headword with (brackets)\[/ref\]: [ref target="headword with brackets"]headword with (brackets)[/ref][/m]
     [m1]\[ref target="headword with brackets"\]any text\[/ref\]: [ref target="headword with brackets"]any text[/ref][/m]
@@ -31,7 +34,7 @@ headword \(with escaped brackets\)
     [m1]test gloss "headword (with escaped brackets)"[/m]
 headword with (brackets)
     [m1]test gloss "headword with (brackets)"[/m]
-any text
-    [m1]test gloss "any text"[/m]
 headword with {[b]}optional parts{[/b]}
     [m1]test gloss "headword with optional parts"[/m]
+{[c slategray]}{to }{[/c]}tell {[c slategray]}smb{[/c]} how to do {[c slategray]}smth{[/c]}
+	[m1][trn]рассказать кому-либо, как что-либо делать[/trn][/m]
