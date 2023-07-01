@@ -18,7 +18,7 @@ test ref target
     [m1]\[ref target="headword with"\]headword with (brackets)\[/ref\]: [ref target="headword with"]headword with (brackets)[/ref][/m]
     [m1]\[ref target="headword with brackets"\]headword with (brackets)\[/ref\]: [ref target="headword with brackets"]headword with (brackets)[/ref][/m]
     [m1]\[ref target="headword with brackets"\]any text\[/ref\]: [ref target="headword with brackets"]any text[/ref][/m]
-    [m1]\[ref target="headword with optional parts"\]headword with {[b]}optional parts{[/b]}\[/ref\]: [ref target="headword with optional parts"]headword with {[b]}optional parts{[/b]}[/ref][/m]
+    [m1]\[ref target="headword with optional parts"\]headword with optional parts\[/ref\]: [ref target="headword with optional parts"]headword with optional parts[/ref][/m]
     [m1]\[ref target="headword with optional parts"\]any text\[/ref\]: [ref target="headword with optional parts"]any text[/ref][/m]
 test url target
     [m1]\[url\]www.yandex.ru\[url\]: [url]www.yandex.ru[/url][/m]
@@ -36,5 +36,3 @@ headword with (brackets)
     [m1]test gloss "headword with (brackets)"[/m]
 headword with {[b]}optional parts{[/b]}
     [m1]test gloss "headword with optional parts"[/m]
-{[c slategray]}{to }{[/c]}tell {[c slategray]}smb{[/c]} how to do {[c slategray]}smth{[/c]}
-	[m1][trn]рассказать кому-либо, как что-либо делать[/trn][/m]
